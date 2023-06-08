@@ -1,7 +1,7 @@
 # Market_Analysis_steel_data
 
 ```
-### Q 1) How many transactions were completed during each marketing campaign?**
+# Q 1) How many transactions were completed during each marketing campaign?**
 
 select campaign_name, count(transaction_id) as no_of_transactions
 from transactions t
