@@ -1,13 +1,11 @@
 # Market_Analysis_steel_data
 
+```
 /* Q 1) How many transactions were completed during each marketing campaign? */
 
 select campaign_name, count(transaction_id) as no_of_transactions
-
 from transactions t
-
 join marketing_campaigns m on t.purchase_date between m.start_date and m.end_date
-
 group by campaign_name;
 
 /* 2. Which product had the highest sales quantity? */
@@ -115,3 +113,4 @@ group by 1)
 select product_name, avg_sold_qty, 
 	dense_rank() over(order by avg_sold_qty) as avg_rank 
 from cte;
+```
